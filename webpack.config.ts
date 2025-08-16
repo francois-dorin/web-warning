@@ -89,7 +89,7 @@ module.exports = {
         {from: 'src/', to: 'source/src' },
         {from: 'browsers/', to: 'source' },
         {from: '*.json', to: 'source' },
-        {from: 'README', to: 'source' },
+        {from: 'README*', to: 'source' },
         {from: '*.ts', to: 'source' },
       ]
     }),  

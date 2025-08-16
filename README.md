@@ -10,7 +10,7 @@ L'extension analyse tous les liens d'une page et applique une mise en forme visu
 
 - ** Danger** : Lien direct vers un site figurant dans une liste noire. Le lien pointe directement vers un domaine identifié comme dangereux.
 
-- ** Warning** : Lien faisant référence à un site dangereux (mentionné dans le texte ou l'URL) mais qui ne pointe pas directement vers le domaine malveillant.
+- ** Warning** : Lien faisant référence à un site dangereux (mentionné dans le texte ou l'URL) mais qui ne pointe pas directement vers le domaine malveillant (par exemple, un lien webarchive vers un site dangereux sera ainsi signalé).
 
 Chaque lien détecté se voit attribuer un badge coloré et son style est modifié pour alerter visuellement l'utilisateur sur le risque potentiel avant qu'il ne clique.
 
