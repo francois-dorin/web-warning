@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des Listes - Next.ink</title>
+    <style>
+        :root {
+            --primary-color: #4a4a4a;
+            --secondary-color: #f86844;
+            --background-color: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            line-height: 1.6;
+            color: var(--primary-color);
+            min-width: 400px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 5px;
+            font-size: 1rem;
+        }
+
+        fieldset {
+            min-height: 20px;
+            padding: 2px;
+            margin-bottom: 20px;
+            background-color: #fdfdfd;
+            border: 1px solid #e3e3e3;
+            border-radius: 4px
+        }
+
+        fieldset > legend {
+            font-weight: 700;
+            font-size: 1.2em;
+            color: #548dd4;
+        }
+
+        ul > li {
+            list-style: none;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 5px;
+        }        
+        
+        #header {
+            display: flex;;
+            align-content: stretch;
+        }
+
+        #domain-name {
+            text-align: center;
+            font-size: 2em;
+            flex-grow: 999;
+        }
+
+        #options {
+            font-size: 2em;
+            flex-grow: 1;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table tr td {
+            margin-left: 15px;
+        }
+
+        table tr th {
+            text-align: right;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+
+        .text-success {
+            color: green;
+        }
+
+        .text-danger {
+            color: red;
+        }
+
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #4CAF50;
+            color: white;
+            padding: 16px 24px;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 1000;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.3s ease;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .toast.success { background: #4CAF50; }
+        .toast.error { background: #f44336; }
+        .toast.warning { background: #ff9800; }
+        .toast.info { background: #2196F3; }
+
+        .icon-copy::before {
+            content: '📋';
+            font-style: normal;
+        }
+
+        .icon-view::before {
+            content: '🔍';
+            font-style: normal;
+        }
+
+        .icon-option::before {
+            content: '⚙';
+            font-style: normal;
+        }
+
+        .ads-id,
+        .ads-id-detected .no-ads-id {
+            display: none;
+        }
+
+        .ads-id-detected .ads-id {
+            display: block;
+        }
+
+        img.icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <div id="header">
+            <h1 id="domain-name"></h1>
+            <button type="button" id="options"><i class="icon-option"></i></button>
+        </div>        
+
+        <fieldset id="fieldset-ads-id">
+            <legend>Google Ads & Liens</legend>
+            <span class="no-ads-id"> 
+                <img src="../../assets/icons8-google-ads-48.png" alt="google-ads-icon" class="icon"/>
+                Pas d'identifiant GoogleAds détecté
+            </span>
+            <div class="ads-id">
+                <div>
+                    <img src="../../assets/icons8-google-ads-48.png" alt="google-ads-icon" class="icon"/>
+                    <span id="ads-id"></span>
+                    <i class="icon-copy" id="to-clipboard"></i>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li class="ads-id"><a id="link-to-build-with" target="_blank"><img src="../../assets/built-with-favicon.ico" class="icon" alt="Built with favicon" /> Build With</a></li>            
+                    <li><a id="link-to-wikipedia" target="_blank"><img src="../../assets/icons8-wikipedia-48.png" class="icon" alt="wikipedia-icon"/> Wikipédia</a></li>
+                </ul>
+            </div>
+            </span>
+            <div id="ads-id"></div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Debug</legend>
+            <a href="../test/test.html" target="_blank">Page de test</a>
+        </fieldset>
+        <footer>
+            Version <span id="version"></span>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

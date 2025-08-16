@@ -1,0 +1,51 @@
+.web-warning-link-danger {
+  background-color: #dc3545 ;
+  color: white; 
+  text-decoration: line-through;
+  text-decoration-color: black;
+}
+
+.web-warning-link-warning {
+  background-color: #ffc107 ;
+  color: #343a40 ;
+  text-decoration: line-through;
+  text-decoration-color: black;
+}
+
+.web-warning-badge {
+  font-family: 'Courier New', Courier, monospace;
+  padding-right:3px;
+  color: white;
+}
+
+.web-warning-badge > .web-warning-badge-item {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+
+  padding: 2px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-decoration: none;
+}
+
+.web-warning-link-danger > .web-warning-badge > .web-warning-badge-item {
+  background-color: #dc3545;
+}
+
+.web-warning-link-warning > .web-warning-badge > .web-warning-badge-item {
+  background-color: #ffc107;
+}
+
+.web-warning-badge > .web-warning-badge-label {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+
+  color: white;
+  padding: 2px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #343a40;
+  text-decoration: none;
+}

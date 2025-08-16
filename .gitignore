@@ -1,0 +1,5 @@
+node_modules/
+list.txt
+package-lock.json
+dist/
+versions/

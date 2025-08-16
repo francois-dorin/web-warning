@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <fieldset>
+            <legend>URL</legend>
+            <table>
+                <tr>
+                    <th>Description</th>
+                    <th>URL</th>
+                    <th>Résultats</th>
+                </tr>
+                <tr>
+                    <td>HTTPS</td>
+                    <td>https://mnei.fr</td>
+                    <td><a href="https://mnei.fr">Lien</a></td>
+                </tr>                
+
+                <tr>
+                    <td>HTTP</td>
+                    <td>http://mnei.fr</td>
+                    <td><a href="http://mnei.fr">Lien</a></td>
+                </tr>
+
+                <tr>
+                    <td>URL en majuscule</td>
+                    <td>http://MNEI.FR</td>
+                    <td><a href="https://MNEI.FR">Lien</a></td>
+                </tr>
+
+                <tr>
+                    <td>URL complète d'une page</td>
+                    <td>https://mnei.fr/bidule/test.html</td>
+                    <td><a href="https://mnei.fr/bidule/test.html">Lien</a></td>
+                </tr>
+
+                <tr>
+                    <td>Sous-domaine www</td>
+                    <td>https://www.mnei.fr/bidule/test.html</td>
+                    <td><a href="https://www.mnei.fr/bidule/test.html">Lien</a></td>
+                </tr>
+                 <tr>
+                    <td>domaine référencée dans une URL</td>
+                    <td>https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Recherche_de_lien/www.mnei.fr</td>
+                    <td><a href="https://fr.wikipedia.org/wiki/Sp%C3%A9cial:Recherche_de_lien/www.mnei.fr">Lien</a></td>
+                </tr>
+            </table>    
+        </fieldset>
+
+        <fieldset>
+            <legend>Texte du lien</legend>
+            <table>
+                <tr>
+                    <th>Description</th>
+                    <th>Texte</th>
+                    <th>Résultats</th>
+                </tr>
+                <tr>
+                    <td>Texte = URL complète</td>
+                    <td>https://mnei.fr</td>
+                    <td><a href="https://google.fr">https://mnei.fr</a></td>
+                </tr>
+
+                <tr>
+                    <td>Texte = URL sans HTTPS</td>
+                    <td>mnei.fr</td>
+                    <td><a href="https://google.fr">mnei.fr</a></td>
+                </tr>    
+                
+                <tr>
+                    <td>Texte = URL sans HTTPS et avec des majuscules</td>
+                    <td>mnei.fr</td>
+                    <td><a href="https://google.fr">mnEI.fr</a></td>
+                </tr>    
+                
+                 <tr>
+                    <td>Texte = URL complète d'une page</td>
+                    <td>https://mnei.fr/bidule/toto.html</td>
+                    <td><a href="https://google.fr">https://mnei.fr/bidule/toto.html</a></td>
+                </tr>
+
+                <tr>
+                    <td>Texte = URL complète avec des MAJUSCULES</td>
+                    <td>https://mnei.fr</td>
+                    <td><a href="https://google.fr">https://MNEI.fr</a></td>
+                </tr>
+
+                <tr>
+                    <td>Texte = URL complète d'une page avec des MAJUSCULES</td>
+                    <td>https://mnei.fr</td>
+                    <td><a href="https://google.fr">https://MNEI.fr/TOTO/test.html</a></td>
+                </tr>
+            </table>    
+        </fieldset>
+
+        <fieldset>
+            <legend>Liste</legend>
+            <table>
+                <tr>
+                    <td>AMF</td>
+                    <td>https://divorion.com</td>
+                    <td><a href="https://divorion.com">https://divorion.com</a></td>
+                </tr>
+                <tr>
+                    <td>Red Flag Domains</td>
+                    <td>https://envoicourrier.fr</td>
+                    <td><a href="https://envoicourrier.fr">https://envoicourrier.fr</a></td>
+                </tr>
+                <tr>
+                    <td>uBlacklist HUGE AI</td>
+                    <td>https://90creators.com/</td>
+                    <td><a href="https://90creators.com/">https://90creators.com/</a></td>
+                </tr>
+            </table>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Pas d'alerte</legend>
+            <ul>
+                <li><a href="https://www.wikipedia.fr">Lien normal</a></li>
+                <li><a href="https://www.wikipedia.fr">https://www.wikipedia.fr</a></li>
+                <li><a href="https://www.wikipedia.fr">www.wikipedia.fr</a></li>
+                <li><a href="https://www.wikipedia.fr">wikipedia.fr</a></li>
+                <li><a href="https://www.github.com">github.com</a></li>
+            </ul>
+        </fieldset>
+    </body>
+</html>
