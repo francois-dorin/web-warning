@@ -18,6 +18,16 @@ Chaque lien détecté se voit attribuer un badge coloré et son style est modifi
 
 ## Installation dans les navigateurs
 
+Attention : aucune liste n'est activée par défaut. Il faut le faire manuellement.
+
+Il faut se rendre dans les options de l'extension pour activer les listes. Vous pouvez le faire facilement :
+- en cliquant sur l'icône de l'extension
+- cela ouvre une fenêtre donnant des informations sur l'extension (cf. image ci-dessous)
+- cliquez sur la roue crantée, en haut à droite de la fenêtre
+- activez les listes que vous souhaiter. Elles devraient se télécharger automatiquement une fois activée.
+
+![Popup de l'extension](/docs/popup.png "Popup de l'extension")
+
 ### Chrome Web Store
 *[Lien vers le Chrome Web Store à ajouter]*
 
