@@ -1,5 +1,5 @@
 {
-    "version": "0.0.4",
+    "version": "0.0.5",
     "name": "WebWarning",
     "description": "Met en avant les liens présentant potentiellement un danger, comme les sites présents dans la liste noire de l'AMF ou ceux de Red Flags Domains"
 }

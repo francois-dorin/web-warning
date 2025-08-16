@@ -174,8 +174,8 @@ function isInList(domain: string): ListEnum | null {
       for(let key in ListEnum) {
         const config = settings[key];
 
-        if (config?.enabled || key == ListEnum.manual) {
-          if (config.domains?.indexOf(d) != -1) {
+        if (config?.enabled || (config && key == ListEnum.manual)) {
+          if (config?.domains?.indexOf(d) != -1) {
             list = key as ListEnum;
             cache[domain] = list;
             return list

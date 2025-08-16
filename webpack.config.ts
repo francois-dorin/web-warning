@@ -6,10 +6,10 @@ const info = require('.\\src\\info.json');
 
 module.exports = {
   entry: {
-   'firefox/service-worker': ['./src/modules/service-worker/service-worker.ts'],
-   'firefox/content': ['./src/modules/content/content.ts'],
-   'firefox/options': ['./src/modules/options/options.ts'],
-   'firefox/popup': ['./src/modules/popup/popup.ts' ],
+   'firefox/modules/service-worker/service-worker': ['./src/modules/service-worker/service-worker.ts'],
+   'firefox/modules/content/content': ['./src/modules/content/content.ts'],
+   'firefox/modules/options/options': ['./src/modules/options/options.ts'],
+   'firefox/modules/popup/popup': ['./src/modules/popup/popup.ts' ],
    'chrome/manifest': ['./browsers/chrome/manifest.json'],
    'chrome/modules/content/content': ['./src/modules/content/content.ts'],
    'chrome/modules/options/options': ['./src/modules/options/options.ts'],

@@ -67,7 +67,13 @@ Pour tester le bon fonctionnement de l'extension, vous pouvez le vérifier en re
 
 *[Cette section sera complétée avec une collection de liens de test permettant de vérifier les différents types d'alertes générées par l'extension]*
 
-## Compilation
+ - [Lien web-archive vers news.dayfr.com](https://web.archive.org/web/20250207090936/https://news.dayfr.com/technologie/14740.html).
+ - [Lien vers news.dayfr.com](https://news.dayfr.com/technologie/14740.html)
+ - [Liste AMF](https://divorion.com)
+ - [Liste Red Flag Domains](https://envoicourrier.fr)
+ - [Liste uBlacklist HUGE AI](https://90creators.com/)
+ 
+## Compilation()
 
 ### Prérequis
 - Node.js installé sur votre système

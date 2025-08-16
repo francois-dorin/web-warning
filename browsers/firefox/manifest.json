@@ -11,7 +11,7 @@
   ],
   "background": {
     "scripts": [
-      "service-worker.js"
+      "modules/service-worker/service-worker.js"
     ]
   },
   "browser_specific_settings": {
@@ -26,36 +26,41 @@
         "<all_urls>"
       ],
       "js": [
-        "content.js"
+        "modules/content/content.js"
       ],
       "css": [
-        "styles.css"
+        "modules/content/styles.css"
       ]
     }
   ],
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "modules/popup/popup.html",
     "default_icon": {
-      "16": "icone-app_ia16.png",
-      "32": "icone-app_ia32.png",
-      "48": "icone-app_ia48.png",
-      "64": "icone-app_ia64.png",
-      "128": "icone-app_ia128.png"
+      "16": "assets/logo-16x16.png",
+      "32": "assets/logo-32x32.png",
+      "48": "assets/logo-48x48.png",
+      "64": "assets/logo-64x64.png",
+      "128": "assets/logo-128x128.png"
     }
   },
   "icons": {
-    "16": "icone-app_ia16.png",
-    "32": "icone-app_ia32.png",
-    "48": "icone-app_ia48.png",
-    "64": "icone-app_ia64.png",
-    "128": "icone-app_ia128.png"
+     "16": "assets/logo-16x16.png",
+      "32": "assets/logo-32x32.png",
+      "48": "assets/logo-48x48.png",
+      "64": "assets/logo-64x64.png",
+      "128": "assets/logo-128x128.png"
   },
   "options_ui": {
-    "page": "options.html"
+    "page": "modules/options/options.html"
   },
   "web_accessible_resources": [ 
     {
-      "resources": [ "options.html", "options.js", "popup.html", "popup.js" ],
+       "resources": [ 
+        "modules/options/options.html", 
+        "modules/options/options.js",
+        "modules/popup/popup.html", 
+        "modules/popup/popup.js" 
+      ],
       "extension_ids": []
     } 
   ]

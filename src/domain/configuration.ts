@@ -2,7 +2,7 @@ export enum ListEnum {
     manual = "manual",
     amf = "amf",
     redFlagDomains = "redFlagDomains",
-    genAI = "genAI",
+    //genAI = "genAI",
     uBlacklistHugeAI = "uBlacklistHugeAI"
 }
 
@@ -37,7 +37,7 @@ export const configuration : {
     [index: string]: IListConfiguration
 } = {
     [ListEnum.manual]: {
-      name: "Liste manuelle",
+      name: "Liste personnelle",
       shortName: "Perso.",
       infoUrl: "",
       downloadUrl: "",
@@ -58,13 +58,13 @@ export const configuration : {
         downloadUrl: "https://dl.red.flag.domains/red.flag.domains.txt",
         format: FormatEnum.rawDomain
     },
-    [ListEnum.genAI]: {
-        name: "GenAI",
-        shortName: "GenAI",
-        infoUrl: "https://next.ink/153613/enquete-plus-de-1-000-medias-en-francais-generes-par-ia-polluent-le-web-et-google/",
-        downloadUrl: "http://gavois.fr/bloom-filter.json",
-        format: FormatEnum.bloomFilter
-    },
+    // [ListEnum.genAI]: {
+    //     name: "GenAI",
+    //     shortName: "GenAI",
+    //     infoUrl: "https://next.ink/153613/enquete-plus-de-1-000-medias-en-francais-generes-par-ia-polluent-le-web-et-google/",
+    //     downloadUrl: "http://gavois.fr/bloom-filter.json",
+    //     format: FormatEnum.bloomFilter
+    // },
     [ListEnum.uBlacklistHugeAI]: {
         name: "uBlacklist Huge AI",
         shortName:"uAI",

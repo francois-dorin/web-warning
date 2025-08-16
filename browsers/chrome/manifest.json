@@ -12,12 +12,6 @@
   "background": {
     "service_worker": "modules/service-worker/service-worker.js"
   },
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "web-warning@custom-dev.fr",
-      "strict_min_version": "109.0"
-    }
-  },
   "content_scripts": [
     {
       "matches": [
@@ -42,11 +36,11 @@
     }
   },
   "icons": {
-    "16": "icone-app_ia16.png",
-    "32": "icone-app_ia32.png",
-    "48": "icone-app_ia48.png",
-    "64": "icone-app_ia64.png",
-    "128": "icone-app_ia128.png"
+     "16": "assets/logo-16x16.png",
+      "32": "assets/logo-32x32.png",
+      "48": "assets/logo-48x48.png",
+      "64": "assets/logo-64x64.png",
+      "128": "assets/logo-128x128.png"
   },
   "options_ui": {
     "page": "modules/options/options.html"
