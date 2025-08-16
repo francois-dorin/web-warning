@@ -5,8 +5,7 @@
   "description": "__EXTENSION_DESCRIPTION__",
   "permissions": [
     "storage",
-    "tabs",
-    "activeTab",
+    "tabs",    
     "alarms"
   ],
   "background": {
