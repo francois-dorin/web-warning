@@ -28,11 +28,12 @@ Il faut se rendre dans les options de l'extension pour activer les listes. Vous 
 
 ![Popup de l'extension](/docs/popup.png "Popup de l'extension")
 
-### Chrome Web Store
-*[Lien vers le Chrome Web Store à ajouter]*
+### Via les stores
 
-### Firefox Add-ons
-*[Lien vers Firefox Add-ons à ajouter]*
+- Mozilla Firefox : https://addons.mozilla.org/fr/firefox/addon/webwarning/
+- Chrome : https://chromewebstore.google.com/detail/fcaiihdgkhhbghgjnljloinbfphfpefh
+
+Attention : les liens peuvent ne pas encore être fonctionnels en fonction des délais de publication sur les stores.
 
 ### Installation manuelle (développeurs)
 1. Téléchargez ou clonez ce repository
