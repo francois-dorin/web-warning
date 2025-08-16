@@ -14,6 +14,8 @@ L'extension analyse tous les liens d'une page et applique une mise en forme visu
 
 Chaque lien détecté se voit attribuer un badge coloré et son style est modifié pour alerter visuellement l'utilisateur sur le risque potentiel avant qu'il ne clique.
 
+![Exemple d'affichage](/docs/example.png "Exemple d'affichage")
+
 ## Installation dans les navigateurs
 
 ### Chrome Web Store
@@ -64,8 +66,6 @@ fake-bank.org
 ## Exemples
 
 Pour tester le bon fonctionnement de l'extension, vous pouvez le vérifier en regardant la mise en page des liens ci-dessous :
-
-*[Cette section sera complétée avec une collection de liens de test permettant de vérifier les différents types d'alertes générées par l'extension]*
 
  - [Lien web-archive vers news.dayfr.com](https://web.archive.org/web/20250207090936/https://news.dayfr.com/technologie/14740.html).
  - [Lien vers news.dayfr.com](https://news.dayfr.com/technologie/14740.html)
